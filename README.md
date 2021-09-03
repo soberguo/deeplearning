@@ -1,4 +1,4 @@
-1 训练网络前创建好input，logs，results，img文件夹
+1 训练网络前创建好input，logs，results，img文件夹，并把权重文件放在model_data文件夹下
 2 训练前将标签文件放在VOCdevkit文件夹下的VOC2007文件夹下的Annotation中。  
 3. 训练前将图片文件放在VOCdevkit文件夹下的VOC2007文件夹下的JPEGImages中。  
 4. 在训练前利用voc2yolo4.py文件生成对应的txt。  
@@ -21,5 +21,8 @@ dog
 9. 把待预测图片放在img文件夹下（图片大小需一致）
 10. 运行change_im_name进行统一命名
 11. 运行predict文件或者predict2文件进行水稻结实率预测，根据图片大小选择predict还是predict2
-12. ## Reference
-13. https://github.com/bubbliiiing/yolov4-pytorch
+12. 训练集，测试集和权重文件
+**链接：https://pan.baidu.com/s/1boB-hAusrJ_geebViThrgw 
+**提取码：dutm
+13. ## Reference
+14. https://github.com/bubbliiiing/yolov4-pytorch
