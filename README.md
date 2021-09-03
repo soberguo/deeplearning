@@ -1,5 +1,5 @@
-1 训练网络前创建好input，logs，results，img文件夹，并把权重文件放在model_data文件夹下
-2 训练前将标签文件放在VOCdevkit文件夹下的VOC2007文件夹下的Annotation中。  
+1.  训练网络前创建好input，logs，results，img文件夹，并把权重文件放在model_data文件夹下
+2. 训练前将标签文件放在VOCdevkit文件夹下的VOC2007文件夹下的Annotation中。  
 3. 训练前将图片文件放在VOCdevkit文件夹下的VOC2007文件夹下的JPEGImages中。  
 4. 在训练前利用voc2yolo4.py文件生成对应的txt。  
 5. 再运行根目录下的voc_annotation.py，运行前需要将classes改成你自己的classes。**注意不要使用中文标签，文件夹中不要有空格！**   
