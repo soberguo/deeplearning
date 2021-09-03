@@ -21,3 +21,5 @@ dog
 9. 把待预测图片放在img文件夹下（图片大小需一致）
 10. 运行change_im_name进行统一命名
 11. 运行predict文件或者predict2文件进行水稻结实率预测，根据图片大小选择predict还是predict2
+12. ## Reference
+13. https://github.com/bubbliiiing/yolov4-pytorch
