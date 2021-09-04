@@ -1,28 +1,28 @@
-1.  训练网络前创建好input，logs，results，img文件夹，并把权重文件放在model_data文件夹下
-2. 训练前将标签文件放在VOCdevkit文件夹下的VOC2007文件夹下的Annotation中。  
-3. 训练前将图片文件放在VOCdevkit文件夹下的VOC2007文件夹下的JPEGImages中。  
-4. 在训练前利用voc2yolo4.py文件生成对应的txt。  
-5. 再运行根目录下的voc_annotation.py，运行前需要将classes改成你自己的classes。**注意不要使用中文标签，文件夹中不要有空格！**   
+1.  Before training the network, create the input, logs, results and img folders, and put the weight file in the model_ Data folder
+2. Before training, put the label file in the annotation under voc207 folder under vocdevkit folder。  
+3. Before training, put the picture files in jpegimages under voc207 folder under vocdevkit folder。  
+4. Before training, use the voc2yolo4.py file to generate the corresponding TXT。  
+5. Before training, use the voc2yolo4.py file to generate the corresponding TXT, and then run VOC in the root directory_ Annotation.py, you need to change your classes to your own before running** Be careful not to use Chinese labels, and there should be no spaces in the folder**   
 ```python
 classes = ["aeroplane", "bicycle", "bird", "boat", "bottle", "bus", "car", "cat", "chair", "cow", "diningtable", "dog", "horse", "motorbike", "person", "pottedplant", "sheep", "sofa", "train", "tvmonitor"]
 ```
-6. 此时会生成对应的2007_train.txt，每一行对应其**图片位置**及其**真实框的位置**。  
-7. **在训练前需要务必在model_data下新建一个txt文档，文档中输入需要分的类，在train.py中将classes_path指向该文件**，示例如下：   
+6. The corresponding 2007 is generated_ Train.txt, each line corresponds to its * * picture position * * and its * * real box position**。  
+7.**Before training, you must be in the model_ Create a new TXT document under data, enter the classes to be divided in the document, and set the classes in train.py_ Path points to the file * *. An example is shown below：   
 ```python
 classes_path = 'model_data/new_classes.txt'    
 ```
-model_data/new_classes.txt文件内容为：   
+model_data/new_classes.txt：   
 ```python
 cat
 dog
 ...
 ```
-8. 运行train.py即可开始训练。
-9. 把待预测图片放在img文件夹下（图片大小需一致）
-10. 运行change_im_name进行统一命名
-11. 运行predict文件或者predict2文件进行水稻结实率预测，根据图片大小选择predict还是predict2
-12. 训练集，测试集和权重文件
-**链接：https://pan.baidu.com/s/1boB-hAusrJ_geebViThrgw 
-**提取码：dutm
+8. Run train.py to start training。
+9. Put the picture to be predicted in img folder (the picture size should be consistent)
+10. Run change_ im_ Name
+11. Run the predict file or predict2 file to predict the seed setting rate of rice, and select predict or predict2 according to the size of the picture
+12. Training set, test set and weight file
+**link：https://pan.baidu.com/s/1boB-hAusrJ_geebViThrgw 
+**Extraction code：dutm
 13. ## Reference
 14. https://github.com/bubbliiiing/yolov4-pytorch
